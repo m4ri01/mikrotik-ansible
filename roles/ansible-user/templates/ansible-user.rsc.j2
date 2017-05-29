@@ -1,0 +1,6 @@
+/file print file=id_rsa.pub
+:delay 2
+/file set id_rsa.pub contents="{{ansible_user_ssh_pubkey}}"
+/user add name={{ansible_user}} group=full password="{{ansible_user_password}}"
+:delay 2
+/user ssh-keys import user={{ansible_user}} public-key-file=id_rsa.pub

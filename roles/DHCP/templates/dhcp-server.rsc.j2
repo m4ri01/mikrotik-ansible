@@ -1,0 +1,3 @@
+/ip pool add name={{dhcp_pool_name}} ranges={{dhcp_ranges}}
+/ip dhcp-server add address-pool={{dhcp_pool_name}} disabled=no interface={{interface}} name={{dhcp_name}}
+/ip dhcp-server network add address={{network}} dns-server={{dns_server}} gateway={{gateway}}

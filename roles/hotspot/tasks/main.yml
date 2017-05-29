@@ -1,0 +1,4 @@
+---
+# tasks file for hotspot
+- name: Generate file hotspot.rsc to mikrotk routerboard
+  command:  bash -c "cat $HOME/mikrotik-ansible/roles/hotspot/files/hotspot.rsc | ssh -T {{inventory_hostname}} -p {{ssh_port}}"

@@ -1,0 +1,10 @@
+---
+# tasks file for DHCP
+- name: Generate .rsc for dhcp-server
+  template: src=dhcp-server.rsc.j2 dest=$HOME/mikrotik-ansible/roles/DHCP/files/tmp/{{inventory_hostname}}.rsc
+
+- name: Run .rsc script
+  command: bash -c "cat $HOME/mikrotik-ansible/roles/DHCP/files/tmp/{{inventory_hostname}}.rsc | ssh -T {{inventory_hostname}} -p {{ssh_port}}"
+
+#- name: Delete temp .rsc file
+#  file: path=$HOME/mikrotik-ansible/roles/DHCP/files/tmp/{{inventory_hostname}}.rsc state=absent

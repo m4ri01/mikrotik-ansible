@@ -1,0 +1,4 @@
+---
+# tasks file for static-route
+- name: execute static-route.rsc
+  command:  bash -c "cat $HOME/mikrotik-ansible/roles/static-route/files/static-route.rsc | ssh -T {{inventory_hostname}} -p {{ssh_port}}"

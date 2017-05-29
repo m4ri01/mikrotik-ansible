@@ -1,0 +1,5 @@
+---
+# vars file for ansible-user
+ansible_user: "gulo"
+ansible_user_ssh_pubkey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDMeHUpP5pqcfA4kymkmJlipoIek9USEZxBDo9b3nUayML4PLGWJ1qmYVLtlbhvVLJyoveQ4fymzm+UvVDftfFZCGQ2dJi5gJ2O91ax5EVLUyYfFTFtnFG3yOvy3AH95xZyhOppuU7unfu1fLAFRlyYVziwju1FQDPWuqrFBGeqwtH8/afLmgBdmu6FTaG8K2q5iUmFfVPfZV62lK5BLppXAynWJUjt6P4kQo/CaarJCzuOqP/d0kastkS88RwZqL5rq5f++pZ3emFzOg3DeFOzram0SuihGTDp4eA7bJTNQWVvI6EmREvEfeQ6gWiruiAbt/PN4iNna/PQUwlZ5gdL gulo@gulo-pc"
+ansible_user_password: "guloganteng"

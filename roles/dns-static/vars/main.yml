@@ -1,0 +1,4 @@
+---
+# vars file for dns-static
+dns_server_ip:  "8.8.8.8" #if more than 1 ip use(,)
+allow_remote_request: "yes" #yes/no

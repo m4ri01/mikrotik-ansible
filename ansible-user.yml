@@ -1,0 +1,13 @@
+---
+- hosts: mikrotik
+  gather_facts: no
+  connection: local
+  roles:
+    - ansible-user
+  vars_prompt:
+    - name: "mikrotik_login"
+      prompt: "Input Username"
+      private:  no
+    - name: "mikrotik_password"
+      prompt: "Input Password"
+      private:  yes

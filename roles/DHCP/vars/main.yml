@@ -1,0 +1,9 @@
+---
+# vars file for DHCP
+dhcp_name:  "dhcp1"
+dhcp_pool_name: "dhcp_pool0"
+dhcp_ranges:  "192.168.10.2-192.168.10.100"
+interface:  "ether1"
+network:  "192.168.10.0/24"
+gateway:  "192.168.10.1"
+dns_server: "8.8.8.8,8.8.4.4"

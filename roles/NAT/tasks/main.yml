@@ -1,0 +1,4 @@
+---
+# tasks file for NAT
+- name: execute file nat.rsc 
+  command: bash -c "cat $HOME/mikrotik-ansible/roles/NAT/files/nat.rsc | ssh -T {{inventory_hostname}} -p {{ssh_port}}"

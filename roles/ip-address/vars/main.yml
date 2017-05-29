@@ -1,0 +1,4 @@
+---
+# vars file for ip-address
+ip_address: "192.168.20.1/24" #Enter IP address and network
+interface: "ether2"
